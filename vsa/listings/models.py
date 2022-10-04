@@ -31,4 +31,5 @@ class Listing(models.Model):
     band = models.ForeignKey(Band,null=True,on_delete=models.SET_NULL)
     name = models.fields.CharField(max_length=100)
     
+    
 
