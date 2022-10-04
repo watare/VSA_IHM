@@ -1,0 +1,25 @@
+{% extends 'listings/base.html'%}
+{% block content %}
+<p>Mes groupes préférés sont :</p>
+        <ul>
+            <li>{{bands.0.name}}</li>
+            <li>{{bands.1.name}}</li>
+            <li>{{bands.2.name}}</li>
+        </ul>
+        <p> j'ai
+            {% if bands|length < 2 %}
+                peu de
+            {% else %}
+                beaucoup de
+            {% endif %} 
+                groupes préférés
+            <ul>
+                {% for band in bands %}
+                  {% if band.name != "" %}
+                    <li>{{band.year_formed}}</li>
+                  {% endif %}
+                {% endfor %}
+            </ul>
+
+        </p>
+    {% endblock %}
