@@ -1,2 +1,2 @@
-# VSA_IHM
-IHM pour la gestion de la configuration du projet VSA:wq
+# Django_course
+https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django 
